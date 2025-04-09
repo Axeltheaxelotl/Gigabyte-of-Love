@@ -13,7 +13,7 @@ body {
 .main_shape {
   width: 672px;
   height: 777px;
-  background: #2c2c2c; /* Couleur de fond au lieu d'image */
+  background: #434343; /* Couleur de fond au lieu d'image */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -22,8 +22,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centre la forme horizontalement et verticalement */
-  border-radius: 20px; /* Arrondir les bords */
-  overflow: hidden;
+  border-radius: 40px; /* Arrondir les bords */
+  overflow: visible; /* Permet d'afficher les éléments qui dépassent */
 }
 
 .v72_89 {
@@ -34,6 +34,8 @@ body {
   position: relative;
   top: 0px;
   left: 0px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 
 .v72_93 {
@@ -44,6 +46,8 @@ body {
   position: absolute;
   top: 0px;
   left: 526px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
 }
 
 .v72_88 {
@@ -54,6 +58,8 @@ body {
   position: absolute;
   top: 41px;
   left: 0px;
+  border-bottom-left-radius: 40px; /* Arrondit le coin inférieur gauche */
+  border-bottom-right-radius: 40px; /* Arrondit le coin inférieur droit */
 }
 
 .v72_167 {
@@ -74,7 +80,7 @@ body {
   position: absolute;
   top: 51px;
   left: 305px;
-  border-radius: 5px;
+  border-radius: 100px;
   overflow: hidden;
 }
 
@@ -89,7 +95,6 @@ body {
   left: calc(50% + 450px); /* Positionne à droite de la forme du milieu */
   transform: translateY(-50%);
   overflow: hidden;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Ajoute une ombre derrière les cubes */
 }
 
 /* Premier cube */
@@ -126,4 +131,27 @@ body {
   border-radius: 20px; /* Arrondir les bords */
   top: 456px;
   left: 3px;
+}
+
+/* Forme grise transparente */
+.overlay_shape {
+  width: 200px; /* Largeur de la forme */
+  height: 100px; /* Hauteur de la forme */
+  background: rgba(128, 128, 128, 0.5); /* Gris transparent */
+  position: absolute;
+  top: 25%; /* Position vers le haut */
+  left: 1%; /* Centré horizontalement */
+  transform: translate(-50%, -50%);
+  border-radius: 40px; /* Coins arrondis */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Ombre ajoutée */
+}
+
+/* Texte à l'intérieur de la forme */
+.overlay_shape_text {
+  font-size: 10px;
+  color: #fff; /* Couleur blanche */
+  text-align: center;
 }
