@@ -142,12 +142,17 @@ body {
   position: absolute;
   top: 25%; /* Position vers le haut */
   left: 1%; /* Centré horizontalement */
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* Position initiale */
   border-radius: 40px; /* Coins arrondis */
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Ombre ajoutée */
+  transition: transform 0.3s ease; /* Transition fluide pour l'animation */
+}
+
+.overlay_shape:hover {
+  transform: translate(-50%, -50%) scale(1.1); /* Grossit légèrement la forme */
 }
 
 /* Texte à l'intérieur de la forme */
@@ -248,4 +253,14 @@ body {
   font-size: 12px;
   opacity: 1;
   text-align: left;
+}
+
+/* Animation pour les textes */
+.v72_179, .v72_180, .v72_181 {
+  transition: color 0.s ease, text-shadow 0.10s ease;
+}
+
+.v72_179:hover, .v72_180:hover, .v72_181:hover {
+  color: rgb(255, 255, 255); /* Change la couleur en jaune */
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8); /* Ajoute un effet lumineux */
 }
