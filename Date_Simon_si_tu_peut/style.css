@@ -92,7 +92,7 @@ body {
   opacity: 1;
   position: absolute;
   top: 50%; /* Aligne verticalement avec la forme du milieu */
-  left: calc(50% + 450px); /* Positionne à droite de la forme du milieu */
+  left: calc(50% + 410px); /* Positionne à droite de la forme du milieu */
   transform: translateY(-50%);
   overflow: hidden;
 }
