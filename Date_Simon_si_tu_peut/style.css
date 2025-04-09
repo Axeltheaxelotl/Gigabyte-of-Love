@@ -24,6 +24,7 @@ body {
   transform: translate(-50%, -50%); /* Centre la forme horizontalement et verticalement */
   border-radius: 40px; /* Arrondir les bords */
   overflow: visible; /* Permet d'afficher les éléments qui dépassent */
+  z-index: 1; /* Assure que cet élément est en dessous */
 }
 
 .v72_89 {
@@ -154,4 +155,97 @@ body {
   font-size: 10px;
   color: #fff; /* Couleur blanche */
   text-align: center;
+  
+}
+
+/* Ajouter l'élément centré en haut */
+.v100_10 {
+  width: 345px;
+  height: 37px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 17.4%; /* Positionné en haut au centre */
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  z-index: 2; /* Assure que cet élément est au-dessus */
+  
+}
+
+.v72_176 {
+  width: 81px;
+  height: 35px;
+  background: #434343;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 20px; /* Arrondir les bords */
+}
+
+.v72_177 {
+  width: 61px;
+  height: 35px;
+  background: #434343;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 101px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 20px; /* Arrondir les bords */
+}
+
+.v72_178 {
+  width: 163px;
+  height: 35px;
+  background: #434343
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 182px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 20px; /* Arrondir les bords */
+}
+
+.v72_179 {
+  width: 66px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 10px;
+  left: 19px;
+  font-family: Limelight;
+  font-weight: Regular;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v72_180 {
+  width: 105px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 10px;
+  left: 215px;
+  font-family: Limelight;
+  font-weight: Regular;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v72_181 {
+  width: 27px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 9px;
+  left: 126px;
+  font-family: Limelight;
+  font-weight: Regular;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
 }
