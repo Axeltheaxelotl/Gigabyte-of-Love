@@ -13,7 +13,7 @@ body {
 .main_shape {
   width: 672px;
   height: 777px;
-  background: url("../images/v93_2.png");
+  background: #2c2c2c; /* Couleur de fond au lieu d'image */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -74,9 +74,56 @@ body {
   position: absolute;
   top: 51px;
   left: 305px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 5px;
   overflow: hidden;
+}
+
+/* Élément aligné à droite */
+.v96_9 {
+  width: 245px;
+  height: 665px;
+  background: #434343; /* Même couleur que le fond de la page pour l'arrière-plan */
+  opacity: 1;
+  position: absolute;
+  top: 50%; /* Aligne verticalement avec la forme du milieu */
+  left: calc(50% + 450px); /* Positionne à droite de la forme du milieu */
+  transform: translateY(-50%);
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Ajoute une ombre derrière les cubes */
+}
+
+/* Premier cube */
+.v72_94 {
+  width: 232px;
+  height: 209px;
+  background: #fff; /* Même couleur que le fond de la page */
+  opacity: 1;
+  position: absolute;
+  border-radius: 20px; /* Arrondir les bords */
+  top: 0px;
+  left: 3px;
+}
+
+/* Deuxième cube */
+.v72_95 {
+  width: 232px;
+  height: 209px;
+  background: #fff; /* Même couleur que le fond de la page */
+  opacity: 1;
+  position: absolute;
+  border-radius: 20px; /* Arrondir les bords */
+  top: 228px;
+  left: 3px;
+}
+
+/* Troisième cube */
+.v72_100 {
+  width: 232px;
+  height: 209px;
+  background: #fff; /* Même couleur que le fond de la page */
+  opacity: 1;
+  position: absolute;
+  border-radius: 20px; /* Arrondir les bords */
+  top: 456px;
+  left: 3px;
 }
